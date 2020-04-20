@@ -1,0 +1,87 @@
+     .nav-item {
+         font-size: 28px;
+         font-weight: bold;
+         margin: 0;
+         padding: 0;
+     }
+     
+     .navbar-wrapper {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         z-index: 10;
+         margin-top: 20px;
+     }
+     
+     .navbar .brand {
+         padding: 14px 20px 16px;
+         /* Increase vertical padding to match navbar links */
+         font-size: 16px;
+         font-weight: bold;
+     }
+     
+     .carousel-container {
+         width: 50%;
+         margin: 20px auto;
+     }
+     
+     .btn {
+         border: 5px orange;
+         font-size: 20px;
+     }
+     
+     h1 {
+         color: orangered;
+         font-size: 55px;
+     }
+     
+     h2 {
+         color: orangered;
+         font-size: 50px;
+     }
+     
+     h3 {
+         color: orangered;
+         font-size: 48;
+     }
+     
+     h4 {
+         color: orangered;
+         font-size: 45px;
+     }
+     
+     h5 {
+         color: orange;
+         font-size: 40px;
+     }
+     
+     p {
+         color: orange;
+         font-size: 30px;
+         font-family: 'Comic Sans MS', cursive, sans-serif;
+     }
+     
+     ol {
+         color: orange;
+         font-size: 30px;
+         font-family: 'Comic Sans MS', cursive, sans-serif;
+     }
+     
+     ul {
+         color: orange;
+         font-size: 30px;
+         font-family: 'Comic Sans MS', cursive, sans-serif;
+     }
+     
+     footer {
+         display: block;
+         color: orange;
+         font-size: 5px;
+         padding: 20px;
+         font-family: 'Comic Sans MS', cursive, sans-serif;
+     }
+     
+     .footer {
+         margin-bottom: 0px;
+     }
