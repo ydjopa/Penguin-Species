@@ -58,8 +58,8 @@ a {
 /* ----- Header ------ */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/galapagos-penguin.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/galapagos-penguin.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(images/galapagos-penguin.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/galapagos-penguin.jpg);
     /* near-gradient is used to put text on image and make the image darker */
     background-size: cover;
     background-position: center;
