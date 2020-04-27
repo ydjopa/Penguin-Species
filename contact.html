@@ -4,181 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!--Link to css-->
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>About Penguins</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+    <title>Penguins</title>
 </head>
 
 <body>
     <header>
-        <style>
-            body {
-                background-image: url('https://images.unsplash.com/photo-1517783999520-f068d7431a60?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                background-position: center;
-            }
-        </style>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-            <a class="navbar-brand" href="#">
-                <img src="Logo.jpg" alt="Penguin logo" height="50px" width="60px" class="d-inline-block align-top"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="species.html">Species</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="penguins.html">Penguins</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+        <nav>
+            <div class="row">
+                <img src="logo.jpg" alt="Penguins" class="logo">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="species.html">Species</a></li>
+                    <li><a href="penguins.html">Penguins</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </nav>
-
-        <!--Contact Form-->
-        <section class="mb-4">
-
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly.</p>
-
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="">Your name</label>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Your email</label>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    <label for="subject" class="">Subject</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                    <label for="message">Your message</label>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                    </form>
-
-                    <div class="text-center text-md-left">
-                        <a class="btn btn-primary" onclick="validateForm();">Send</a>
-                    </div>
-                    <div class="status"></div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Columbus, OH 43235, USA</p>
-                        </li>
-
-                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                            <p>+ 1(800)-111-1111</p>
-                        </li>
-
-                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                            <p>contact@test.com</p>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-            </div>
-
-        </section>
-        <!--Section: Contact v.2-->
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
-        </script>
-</body>
-
-</html>
-
-<!-- <footer> -->
-<footer class="page-footer font-small bg-dark">
-
-    <div class="footer-left">
-        <img src="Logo.jpg" alt="Penguin logo" height="50px" width="60px" class="d-inline-block align-top"></a>
-
-        <p class="footer-links">
-            <a href="https://twitter.com/explore">Twitter</a> |
-            <a href="https://www.facebook.com">Facebook</a> |
-            <a href="https://www.linkedin.com">linkedin</a> |
-            <a href="https://www.instagram.com/?hl=en">Instagram</a>
-        </p>
-
-        <p class="footer-company-name">© 2020 - Lovely Penguins! (Sources: <a href="https://www.penguins-world.com">Penguins-World</a>)</p>
-        <!-- The ANCHOR <a> tag is used to create a hyperlink. The content of this element is what will be displayed on the webpage to represent the link. This content can be text, an image, or other content.. Penguins-World will be displayed as a hyperlink. -->
-    </div>
-
-    <div class="footer-right">
-        <div class="footer-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
+        <div class="hero-text-box">
+            <h1>Contact Us</h1>
         </div>
-    </div>
-</footer>
+    </header>

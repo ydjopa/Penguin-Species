@@ -4,139 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!--Link to css-->
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Learning more about penguins</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+    <title>Penguins</title>
 </head>
 
 <body>
     <header>
-        <style>
-            body {
-                background-image: url('https://images.unsplash.com/photo-1571177327558-2e19a4dc99af?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                background-position: center;
-            }
-        </style>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-
-            <a class="navbar-brand" href="#">
-                <img src="Logo.jpg" alt="Penguin logo" height="50px" width="60px" class="d-inline-block align-top"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="species.html">Species</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="penguins.html">Penguins</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+        <nav>
+            <div class="row">
+                <img src="logo.jpg" alt="Penguins" class="logo">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="species.html">Species</a></li>
+                    <li><a href="penguins.html">Penguins</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </nav>
-
-        <h1> About Pengins</h1>
-        <!--This is a link to the last section-->
-        <p id="top"><a href="#last">Jump to bottom</a></p>
-    </header>
-    <article>
-        <section>
-            <h3>African Penguin - <em>Spheniscus demersus</em></h3>
-            <p>The African penguin, also known as Jackass Penguin, is a small banded species with a social behavior that inhabits the warm environments of South Africa and part of the coast of Namibia.</p>
-            <h3>Chinstrap Penguin - <em>Pygoscelis antarcticus</em></h3>
-            <p>A thin line around the face distinguishes the Chinstrap penguin, a species that lives on several islands and has a great ability for the construction of nests during its reproductive season.</p>
-            <h3>Emperor Penguin - <em>Aptenodytes forsteri</em></h3>
-            <p>It is the largest penguin in the world, with an incredible capability to dive deep waters. It performs one of the hardest migrations in the animal kingdom to reach its nesting grounds in Antartica which suppose a high resistance to withstand
-                freezing temperatures.</p>
-            <h3>Gentoo Penguin - <em>Pygoscelis papua</em></h3>
-            <p>It is one of the most recognizable penguins because a white stripe around the eyes that goes through the head. There are two subspecies of this penguin which is part of the group of Brush-tailed Penguins and is the largest species of its genus.</p>
-            <h3>Adelie Penguin - <em>Pygoscelis adeliae</em></h3>
-            <p>The Adelie Penguin is a species with one of the most stable populations of all penguins. Their distinctive eyes rounded by a white circle that contrasts with the completely black head, help to recognize them. It is one of the two species that
-                spend their life in Antartica.</p>
-            <h3>King Penguin - <em>Aptenodytes patagonicus</em></h3>
-            <p>The king penguin is the second largest species and features bright and intense colors in its chest, head and beak. The king penguin has two subspecies distributed around several subantarctic islands, with climates ranging from temperate to
-                cold.
-            </p>
-            <h3>Galapagos Penguin - <em>Spheniscus mendiculus</em></h3>
-            <p>The Galapagos Penguin inhabits the islands with the same name where the climate is mainly hot. It is the penguin that lives north most, very close to the Equator and eventually reaches waters of the northern hemisphere. They have feeding and
-                reproductive habits different than those of their southern relatives.</p>
-            <h3>Humboldt Penguin - <em>Spheniscus humboldti</em></h3>
-            <p>The Humboldt Penguin is native to the Peruvian and Chilean coasts. It is a Banded Penguin with a Vulnerable conservation status due to several threats, mainly overfishing, that make them harder to find food.</p>
-            <h3>Erect-crested Penguin - <em>Eudyptes sclateri</em></h3>
-            <p>The Erect-crested Penguin are native to the Antipodes and Bounty Islands, a pair of remote places protected from human activity by the government of New Zealand, which make them hard to see. Despite this, it is one of the species most threatened
-                penguin species.</p>
-            <h3>Macaroni Penguin - <em>Eudyptes chrysolophus</em></h3>
-            <p>Macaroni Penguins have a prominent orange-yellow plume that attracts attention. It is one of the most migratory, aggressive and territorial, penguins and prefers to feed on fish and squid.</p>
-            <h3>Fiordland Penguin - <em>Eudyptes pachyrhynchus</em></h3>
-            <p>The Fiordland penguin is a crested penguin native to West New Zealand which inhabits the Fiordland region of this country. Its limited distribution makes it one of the least known penguins. Two white patches on each side of the beak make it
-                different from other crested penguins.</p>
-            <h3>Snares Penguin - <em>Eudyptes robustus</em></h3>
-            <p>The Snares Penguin exclusively inhabits the Snares Island in New Zealand. It is part of the group of crested penguins, and its appearance is very similar to the Fiordland penguin. It mainly feeds on krill and squid and only around 20% of fish.</p>
-            <h3>Magellanic Penguin - <em>Spheniscus magellanicus</em></h3>
-            <p>The Magellanic Penguin belongs to the group of banded penguins which makes it similar to the Humboldt, African, and Galapagos penguins. It inhabits beautiful landscapes in Argentina and Chile, and it is profoundly affected by “El Niño” phenomenon.</p>
-            <h3>Royal Penguin - <em>Eudyptes schlegeli</em></h3>
-            <p>The Royal Penguin is part of the group of crested penguins, but it has an entirely white face which makes it easy to identify. It inhabits some Australian islands where it feeds on up to 50% krill and the rest of fish and squid.</p>
-            <h3>Little Blue Penguin - <em>Eudyptula minor</em></h3>
-            <p>The Little Blue Penguin is the smallest species with a height of 13 inches. Its feathers have a blueish color, and they inhabit several places of Australia, New Zealand, Tasmania and some islands. They are not migratory and mainly nocturnal
-                penguins.
-            </p>
-            <h3>Rockhopper Penguin - <em>Eudyptes</em></h3>
-            <p>The Rockhopper penguin has red eyes, short beak, and a characteristic plume. It is part of the crested penguins and has two subspecies distributed in a large area which includes South America and several subantarctic islands.</p>
-            <h3>Yellow-eyed Penguin - <em>Megadyptes antipodes</em></h3>
-            <p>The Yellow-eyed Penguin has golden-yellow spots around its eyes. It inhabits several islands around New Zealand, and It is not a migratory species. It groups in small colonies as this penguin is not as social as the other species.</p>
-
-        </section>
-    </article>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
-    </script>
-    <!--This is a link to the top section-->
-    <p id="last"></p><a href="#top">Back to top</a></p>
-</body>
-
-</html>
-
-<!-- <footer> -->
-<footer class="page-footer font-small bg-dark">
-
-    <div class="footer-left">
-        <img src="Logo.jpg" alt="Penguin logo" height="50px" width="60px" class="d-inline-block align-top"></a>
-
-        <p class="footer-links">
-            <a href="https://twitter.com/explore">Twitter</a> |
-            <a href="https://www.facebook.com">Facebook</a> |
-            <a href="https://www.linkedin.com">linkedin</a> |
-            <a href="https://www.instagram.com/?hl=en">Instagram</a>
-        </p>
-
-        <p class="footer-company-name">© 2020 - Lovely Penguins! (Sources: <a href="https://www.penguins-world.com">Penguins-World</a>)</p>
-    </div>
-
-    <div class="footer-right">
-        <div class="footer-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
+        <div class="hero-text-box">
+            <h1>Fun Facts!</h1>
         </div>
-    </div>
-</footer>
+    </header>

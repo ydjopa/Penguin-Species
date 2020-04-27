@@ -1,87 +1,196 @@
-     .nav-item {
-         font-size: 28px;
-         font-weight: bold;
-         margin: 0;
-         padding: 0;
-     }
-     
-     .navbar-wrapper {
-         position: absolute;
-         top: 0;
-         left: 0;
-         right: 0;
-         z-index: 10;
-         margin-top: 20px;
-     }
-     
-     .navbar .brand {
-         padding: 14px 20px 16px;
-         /* Increase vertical padding to match navbar links */
-         font-size: 16px;
-         font-weight: bold;
-     }
-     
-     .carousel-container {
-         width: 50%;
-         margin: 20px auto;
-     }
-     
-     .btn {
-         border: 5px orange;
-         font-size: 20px;
-     }
-     
-     h1 {
-         color: orangered;
-         font-size: 55px;
-     }
-     
-     h2 {
-         color: orangered;
-         font-size: 50px;
-     }
-     
-     h3 {
-         color: orangered;
-         font-size: 48;
-     }
-     
-     h4 {
-         color: orangered;
-         font-size: 45px;
-     }
-     
-     h5 {
-         color: orange;
-         font-size: 40px;
-     }
-     
-     p {
-         color: orange;
-         font-size: 30px;
-         font-family: 'Comic Sans MS', cursive, sans-serif;
-     }
-     
-     ol {
-         color: orange;
-         font-size: 30px;
-         font-family: 'Comic Sans MS', cursive, sans-serif;
-     }
-     
-     ul {
-         color: orange;
-         font-size: 30px;
-         font-family: 'Comic Sans MS', cursive, sans-serif;
-     }
-     
-     footer {
-         display: block;
-         color: orange;
-         font-size: 5px;
-         padding: 20px;
-         font-family: 'Comic Sans MS', cursive, sans-serif;
-     }
-     
-     .footer {
-         margin-bottom: 0px;
-     }
+/* ---- Basic Setup ------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: "Lato, Arial, sans-serif";
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizelegibility;
+    /* Makes fonts rendering in a great way */
+}
+
+
+/* ----- Reusable Components ------ */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    /* top and botom set to 0px and left & right to auto */
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+
+/* ----- Buttons ------ */
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 2px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+    padding-bottom: 10px
+}
+
+a {
+    background-color: transparent;
+    font-size: 25px;
+    padding: 10px 10px;
+    text-decoration: none;
+    /* -- Text deco gets rid of the underlines -- */
+}
+
+
+/* ----- Header ------ */
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/galapagos-penguin.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/galapagos-penguin.jpg);
+    /* near-gradient is used to put text on image and make the image darker */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: #e67e22;
+    font-size: 300%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+
+/* ----- logo ------ */
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+
+/* ----- Navigations ------ */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 28px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #e67e22;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+
+/* put some yellow lines between some text */
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* ----- Paragraphs (index bottom) ------ */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 16%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/* ----- Icons------ */
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    /* to force a line break */
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 100%;
+    /* secret to align text and icons */
+    line-height: 100%;
+    vertical-align: middle;
+    margin-top: -5px;
+}

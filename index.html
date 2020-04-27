@@ -2,203 +2,34 @@
 <html lang="en">
 
 <head>
-    <!-- Bootstrap hamburger menu - content delivery network link -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Link to css -->
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Facts About Penguins</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+    <title>Penguins</title>
 </head>
 
 <body>
     <header>
-        <style>
-            html,
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-family: "Comic Sans MS", cursive, sans-serif;
-            }
-        </style>
-        <style>
-            body {
-                background-image: url('https://images.unsplash.com/photo-1544817287-d26f7ed1e4d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                background-position: center;
-            }
-        </style>
-        <!-- Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-            <a class="navbar-brand" href="#">
-                <img src="Logo.jpg" alt="Penguin logo" height="50px" width="60px" class="d-inline-block align-top"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="species.html">Species</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="penguins.html">Penguins</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+        <nav>
+            <div class="row">
+                <img src="logo.jpg" alt="Penguins" class="logo">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="species.html">Species</a></li>
+                    <li><a href="penguins.html">Penguins</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-warning my-2 my-sm-0" type="search">Search</button>
-                </form>
             </div>
         </nav>
-        <!-- Carousel -->
-        <div class="carousel-container">
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                    <li data-target="#demo" data-slide-to="3"></li>
-                    <li data-target="#demo" data-slide-to="4"></li>
-                    <li data-target="#demo" data-slide-to="5"></li>
-                    <li data-target="#demo" data-slide-to="6"></li>
-                    <li data-target="#demo" data-slide-to="7"></li>
-                </ol>
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="Gentoo-Penguin.jpg" alt="Gentoo">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><strong>Gentoo Penguin</strong></h5>
-                            <p>Pygoscelis Genus – Brush-tailed Penguins. <br>Life expectancy in the wild: 10-15 years.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="King-Penguin.jpg" alt="King">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><strong>King Penguin</strong></h5>
-                            <p>Aptenodytes Genus – Great Penguins. <br>Life expectancy in the wild: 20 years.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Royal-Penguin.jpg" alt="Royal">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><strong>Royal Penguin</strong></h5>
-                            <p>Eudyptes Genus – Crested penguins. <br>Life expectancy in the wild: 12 years.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Adelie-Penguin.jpg" alt="Adelie">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><strong>Adelie Penguin</strong></h5>
-                            <p>Genus Pygoscelis – Brush-tailed Penguins. <br>Life expectancy in the wild: 10 years.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Chinstrap-Penguin.jpg" alt="Chinstrap">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><strong>Chinstrap Penguin</strong> </h5>
-                            <p>Pygoscelis Genus – Brush-tailed Penguins. <br>Life expectancy in the wild: 12 years.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Snares-Penguin.jpg" alt="Snares">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><strong>Snares Penguin</strong></h5>
-                            <p>Eudyptes Genus – Crested penguins. <br>Life expectancy in the wild: 11 years.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="African-Penguin.jpg" alt="African">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><strong>African Penguin</strong></h5>
-                            <p>Spheniscus Genus – Banded Penguins. <br>Life expectancy in the wild: 10-12 year.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
+        <div class="hero-text-box">
+            <h1>Hello Penguins!!<br>Welcome to my webpage.</h1>
+            <a class="btn-full" href="species.html">Learn More</a>
         </div>
-
-        <h1><strong>Hello Penguins!!</strong></h1>
     </header>
-    <h1><strong>Hello Penguins!!</strong></h1>
-    </header>
-    <h1>Welcome to my webpage</h1>
-    <p>I hope you find this useful. It's really just a bunch of random information about Penguins. <br>Most of the date in this webpage was collected from <a href="https://www.penguins-world.com/types-of-penguins/ ">Penguins-World</a> site.
-    </p>
-    <h2>The top 3 most known penguins:</h2>
-    <ol>
-        <li>Emperor Penguin</li>
-        <li>Royal Penguin</li>
-        <li>King Penguin</li>
-    </ol>
-    <h2>Penguins that you might have never heard before:</h2>
-    <ul>
-        <li>Snare Penguin</li>
-        <li>Rockhopper Penguin</li>
-        <li>Yellow-eyed penguin</li>
-        <li>African Penguin</li>
-    </ul>
-    <h2>Penguin Motion</h2>
-    <h2>What's penguin motion called?</h2>
-    <p>The walking motion when penguins are on the move from one location to another is called
-        <em><strong>waddle</strong></em>. Penguins have short legs and their knees are close to their body. This makes the penguin walk look like a waddle, and hence the name. The next paragraph contains some <strong>very</strong> important information
-        about penguins. You<em>really</em> should pay attention to <strong><em>Species and Penguins tabs.</em></strong></p>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
-    </script>
-</body>
-
-</html>
-
-<!-- <footer> -->
-<footer class="page-footer font-small bg-dark">
-
-    <div class="footer-left">
-        <img src="Logo.jpg" alt="Penguin logo" height="50px" width="60px" class="d-inline-block align-top"></a>
-
-        <p class="footer-links">
-            <a href="https://twitter.com/explore">Twitter</a> |
-            <a href="https://www.facebook.com">Facebook</a> |
-            <a href="https://www.linkedin.com">linkedin</a> |
-            <a href="https://www.instagram.com/?hl=en">Instagram</a>
-        </p>
-
-        <p class="footer-company-name">© 2020 - Lovely Penguins! (Sources: <a href="https://www.penguins-world.com">Penguins-World</a>)</p>
-        <!-- The ANCHOR <a> tag is used to create a hyperlink. The content of this element is what will be displayed on the webpage to represent the link. This content can be text, an image, or other content.. Penguins-World will be displayed as a hyperlink. -->
-    </div>
-
-    <div class="footer-right">
-        <div class="footer-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
-        </div>
-    </div>
-</footer>
