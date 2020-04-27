@@ -194,3 +194,33 @@ h2:after {
     vertical-align: middle;
     margin-top: -5px;
 }
+
+
+/* --- Contact Form --- */
+
+.contact-form {
+    width: 60;
+    margin: 0 auto;
+}
+
+input [type=text],
+select[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    /* to get rid of the blue color border lines that appear when clicking a box */
+    outline: none;
+}
