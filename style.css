@@ -43,7 +43,8 @@ input[type=submit] {
     border: 2px solid #e67e22;
     color: #fff;
     margin-right: 15px;
-    padding-bottom: 10px
+    padding: 10px;
+    padding-top: 10px;
 }
 
 a {
@@ -102,6 +103,15 @@ h2 {
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+p,
+ul {
+    font-size: 100%;
+    line-height: 145%;
+    text-align: center;
 }
 
 
@@ -173,29 +183,6 @@ h2:after {
 }
 
 
-/* ----- Icons------ */
-
-.icon-big {
-    font-size: 350%;
-    display: block;
-    /* to force a line break */
-    color: #e67e22;
-    margin-bottom: 10px;
-}
-
-.icon-small {
-    display: inline-block;
-    width: 20px;
-    text-align: center;
-    color: #e67e22;
-    font-size: 100%;
-    /* secret to align text and icons */
-    line-height: 100%;
-    vertical-align: middle;
-    margin-top: -5px;
-}
-
-
 /* --- Contact Form --- */
 
 .contact-form {
@@ -223,4 +210,68 @@ input[type=checkbox] {
 *:focus {
     /* to get rid of the blue color border lines that appear when clicking a box */
     outline: none;
+}
+
+
+/* --- Mobile First --- */
+
+@media screen and (max-width: 53em) {
+    .outermost {
+        width: auto;
+    }
+    nav,
+    a,
+    span {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    a {
+        padding: 0.5em 0 1em 0.8em;
+    }
+    a+a {
+        border-top: 0;
+    }
+}
+
+
+/* --- Species --- */
+
+.section-species {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(images/snares-penguin.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 20px;
+}
+
+blockquote:before {
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    /* separates text and image in two blocks */
+}
+
+cite img {
+    height: 160px;
+    border-radius: 0%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
