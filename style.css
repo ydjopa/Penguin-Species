@@ -142,7 +142,7 @@ ul {
     height: 100px;
     width: auto;
     float: left;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 
@@ -151,7 +151,7 @@ ul {
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 70px;
 }
 
 .main-nav li {
