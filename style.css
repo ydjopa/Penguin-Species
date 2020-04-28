@@ -105,13 +105,15 @@ h3 {
     margin-bottom: 15px;
     text-align: center;
     margin-top: 30px;
+    color: #fff;
 }
 
-p,
+.long-copy,
 ul {
     font-size: 100%;
     line-height: 145%;
     text-align: center;
+    color: #fff;
 }
 
 
@@ -169,7 +171,19 @@ h2:after {
 }
 
 
-/* ----- Paragraphs (index bottom) ------ */
+/* ----- Section-Features ------ */
+
+.section-features {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/babies2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/babies2.jpg);
+    /* near-gradient is used to put text on image and make the image darker */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    margin: 0%;
+    padding: 5px, 5px;
+}
 
 .long-copy {
     line-height: 145%;
@@ -235,7 +249,7 @@ input[type=checkbox] {
 }
 
 
-/* --- Species --- */
+/* --- Penguins --- */
 
 .section-species {
     background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(images/snares-penguin.jpg);
@@ -274,4 +288,17 @@ cite img {
     border-radius: 0%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+
+/* --- Species --- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.penguin-feature {
+    margin-bottom: 5px;
 }
