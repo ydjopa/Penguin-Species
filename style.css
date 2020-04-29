@@ -253,7 +253,7 @@ input[type=checkbox] {
 /* --- Penguins --- */
 
 .section-species {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(images/snares-penguin.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.4)), url(images/snares-penguin.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
