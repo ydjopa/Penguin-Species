@@ -42,14 +42,13 @@ input[type=submit] {
     background-color: #e67e22;
     border: 2px solid #e67e22;
     color: #fff;
-    margin-right: 15px;
-    padding: 10px;
-    padding-top: 10px;
+    margin-right: 20px;
+    padding: 15px 10px;
 }
 
 a {
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px 10px;
     text-decoration: none;
     /* -- Text deco gets rid of the underlines -- */
@@ -237,7 +236,6 @@ input[type=checkbox] {
     nav,
     a,
     span {
-        display: block;
         width: auto;
         height: auto;
     }
