@@ -4,125 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css " href="style.css">
     <title>Penguins</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</head>
 
-
-    <body>
-        <header>
-            <nav>
-                <div class="row">
-                    <img src="logo.jpg" alt="Penguins" class="logo">
-                    <ul class="main-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="penguins.html">Penguins</a></li>
-                        <li><a href="species.html">Species</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="hero-text-box">
-                <h1>Contact Us</h1>
-            </div>
-        </header>
-        <section>
-            <div class="section-from">
-                <div class="row">
-                    <h2>We're happy to hear from you</h2>
-                </div>
-                <div class="row">
-                    <form method="post" action="#" class="contact-form">
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label for="name">Name</label>
-                            </div>
-                            <div class="col span-2-of-3">
-                                <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                            </div>
+<body>
+    <header>
+        <nav>
+            <img src="logo.jpg" alt="Penguins" class="logo">
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="penguins.html">Penguins</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Contact Us</h1>
+    </header>
+    <section>
+        <div class="section-from">
+            <h2>We're happy to hear from you</h2>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
                         </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="col span-2-of-3">
-                                <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                            </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
                         </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label>How did you find us?</label>
-                            </div>
-                            <div class="col span-2-of-3">
-                                <!--For this label using the dropdown box as follow-->
-                                <select name="find-us" id="find-us">
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <!--For this label using the dropdown box as follow-->
+                            <select name="find-us" id="find-us">
                                 <option value="friend" selected>Friend</option>
                                 <option value="search">Search Engine</option>
                                 <option value="Ad">Advertisement</option>
                                 <option value="other">Other</option>
                             </select>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label>Newsletter</label>
-                            </div>
-                            <div class="col span-2-of-3">
-                                <input type="checkbox" name="news" id="news" checked>
-                                <label for="news">Yes, please!</label>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter</label>
                         </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label>Drop us a line</label>
-                            </div>
-                            <div class="col span-2-of-3">
-                                <textarea name="message" placeholder="Enter your message"></textarea>
-                            </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked>
+                            <label for="news">Yes, please!</label>
                         </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label>&nbsp;</label>
-                            </div>
-                            <div class="col span-2-of-3">
-                                <input type="submit" value="Send">
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
                         </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
 
-                    </form>
-                </div>
-
+                </form>
             </div>
-        </section>
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2"></div>
-                <ul class="social-links">
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About&nbsp;Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
                 </ul>
             </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2020 by Yves-Penguins Co. All rights reserved.
-                </p>
-            </div>
-        </footer>
+            <div class="col span-1-of-2"></div>
+            <ul class="social-links">
+                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p class="copyright">
+                Copyright &copy; 2020 by Yves-Penguins Co. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
-
-    </body>
+</body>
 
 </html>
