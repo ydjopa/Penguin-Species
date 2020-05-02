@@ -159,6 +159,17 @@
         padding-top: 20px;
         padding-bottom: 0px;
     }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 130px;
+        width: 130px;
+        outline: #e67e22;
+        background-size: 100%, 100%;
+        border-radius: 70%;
+        border: 4px solid #e67e22;
+        background-image: none;
+    }
     /* ----- Navigations ------ */
     
     .main-nav {
