@@ -28,14 +28,21 @@
     }
     /* ----- Buttons ------ */
     
-    .btn-full:link,
-    .btn-full:visited,
-    input[type=submit] {
+    .btn-full:link {
+        margin-left: 140px;
         background-color: orange;
         border: 3px solid #e67e22;
         color: #fff;
-        margin-left: 140px;
         padding: 5px;
+    }
+    
+    .btn-full:visited,
+    input[type=submit] {
+        margin-right: 100px;
+        background-color: orange;
+        border: 3px solid #e67e22;
+        color: #fff;
+        padding: 3px;
     }
     
     a:hover,
@@ -59,6 +66,11 @@
         padding: 10px 10px;
         text-decoration: none;
         /* -- Text deco gets rid of the underlines -- */
+    }
+    
+    #name,
+    #email {
+        padding: auto;
     }
     /* ----- Header ------ */
     
@@ -222,7 +234,6 @@
     /* --- Contact Form --- */
     
     .contact-form {
-        width: 90;
         margin: auto;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -231,14 +242,14 @@
     input [type=text],
     select[type=email],
     textarea {
-        width: 100%;
+        width: 130%;
         padding: 7px;
         border-radius: 3px;
         border: 1px solid #ccc;
     }
     
     textarea {
-        height: 150px;
+        height: 200px;
     }
     
     input[type=checkbox] {
