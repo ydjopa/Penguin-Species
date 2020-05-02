@@ -395,3 +395,11 @@
         float: left;
         list-style: none;
     }
+    
+    .section-from {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(logo.jpg);
+        background-size: 40%;
+        color: #e67e22;
+        background-attachment: fixed;
+        margin-right: 5px;
+    }
