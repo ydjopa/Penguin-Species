@@ -130,10 +130,10 @@
      text-align: center;
  }
  
- xz p,
+ p,
  ul {
      font-size: 25px;
-     padding-top: 20px;
+     padding-top: 0px;
  }
  
  p {
@@ -186,12 +186,12 @@
  .main-nav {
      float: right;
      list-style: none;
-     margin-top: 50px;
+     margin: 45px auto;
  }
  
  .main-nav li {
      display: inline-block;
-     margin-left: 5px;
+     margin-left: 20px;
      font-size: 28px;
      margin-right: 50px;
  }
