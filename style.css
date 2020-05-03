@@ -98,7 +98,7 @@
      margin-left: 135px;
      margin-right: 50px;
      margin-bottom: 10px;
-     padding-top: 200px;
+     padding-top: 100px;
      padding-bottom: 15px;
  }
  
@@ -159,6 +159,7 @@
      width: auto;
      float: center;
      margin-top: 60px;
+     margin-bottom: 0px;
      margin-left: 40px;
      padding-left: 100px;
  }
@@ -186,7 +187,7 @@
  .main-nav {
      float: right;
      list-style: none;
-     margin: 95px auto;
+     margin: 45px;
  }
  
  .main-nav li {
