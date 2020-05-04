@@ -6,13 +6,15 @@
      box-sizing: border-box;
  }
  
- html {
+ html,
+ body {
      background-color: #fff;
      color: #555;
      font-family: "Lato, Arial, sans-serif";
      font-weight: 200;
      font-size: 20px;
      text-rendering: optimizelegibility;
+     overflow-x: hidden;
      /* Makes fonts rendering in a great way */
  }
  /* ----- Reusable Components ------ */
@@ -321,8 +323,8 @@
  blockquote {
      padding-right: 40px;
      padding-left: 50px;
-     padding-top: 15px;
-     padding-bottom: 15px;
+     padding-top: 40px;
+     padding-bottom: 5px;
      font-size: 20px;
      font-style: italic;
      line-height: 145%;
