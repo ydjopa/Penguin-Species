@@ -309,6 +309,12 @@
          border-top: 0;
      }
  }
+ 
+ @media (min-width: 768px) .col-md-6 {
+     -ms-flex: 0 0 50%;
+     flex: 0 0 50%;
+     max-width: 100%;
+ }
  /* Extra small devices (portrait phones, less than 576px) */
  /* No media query for `xs` since this is the default in Bootstrap */
  /* --- Penguins --- */
@@ -448,4 +454,18 @@
      color: #e67e22;
      background-attachment: fixed;
      padding-top: 25px;
+ }
+ 
+ .mt-4,
+ .my-4 {
+     /* margin-top: 1.5rem!important; */
+ }
+ 
+ .head-main {
+     font-size: 20px;
+ }
+ 
+ .col-md-6 {
+     margin: auto;
+     padding: 20px 20px;
  }
