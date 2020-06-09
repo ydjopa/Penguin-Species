@@ -260,36 +260,6 @@
  section {
      padding: 30px 0px;
  }
- /* --- Contact Form --- */
- 
- .contact-form {
-     margin: auto;
-     margin-top: 40px;
-     margin-bottom: 40px;
-     padding: 20px 30px;
- }
- 
- input [type=name],
- select[type=email],
- textarea {
-     width: 100%;
-     padding: 15px;
-     border-radius: 3px;
-     border: 1px solid #ccc;
- }
- 
- textarea {
-     height: 200px;
- }
- 
- input[type=checkbox] {
-     margin: 5px 5px 5px 0px;
- }
- 
- *:focus {
-     /* to get rid of the blue color border lines that appear when clicking a box */
-     outline: none;
- }
  /* --- Mobile First --- */
  
  @media screen and (min-width: 53em) {
@@ -446,6 +416,36 @@
      float: left;
      list-style: none;
      margin-left: 50px;
+ }
+ /* --- Contact Form --- */
+ 
+ .contact-form {
+     margin: auto;
+     margin-top: 40px;
+     margin-bottom: 40px;
+     padding: 20px 30px;
+ }
+ 
+ input [type=name],
+ select[type=email],
+ textarea {
+     width: 100%;
+     padding: 15px;
+     border-radius: 3px;
+     border: 1px solid #ccc;
+ }
+ 
+ textarea {
+     height: 200px;
+ }
+ 
+ input[type=checkbox] {
+     margin: 5px 5px 5px 0px;
+ }
+ 
+ *:focus {
+     /* to get rid of the blue color border lines that appear when clicking a box */
+     outline: none;
  }
  
  .section-from {
