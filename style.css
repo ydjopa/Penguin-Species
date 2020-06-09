@@ -469,3 +469,28 @@
      margin: auto;
      padding: 20px 20px;
  }
+ 
+ button,
+ input {
+     overflow: visible;
+     border-color: #e67e22;
+ }
+ 
+ button,
+ input,
+ optgroup,
+ select,
+ textarea {
+     margin: 0;
+     font-family: inherit;
+     font-size: inherit;
+     line-height: inherit;
+     border-color: #e67e22;
+ }
+ 
+ element.style {}
+ 
+ textarea {
+     overflow: auto;
+     resize: vertical;
+ }
