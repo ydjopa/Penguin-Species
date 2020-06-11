@@ -456,18 +456,14 @@
      padding-top: 25px;
  }
  
- .mt-4,
- .my-4 {
-     /* margin-top: 1.5rem!important; */
- }
- 
  .head-main {
      font-size: 20px;
  }
  
- .col-md-6 {
+ .col-md-6 map mt-lg-0 mt-4 {
      margin: auto;
-     padding: 20px 20px;
+     padding: 5px 5px;
+     align-items: center;
  }
  
  button,
@@ -493,4 +489,9 @@
  textarea {
      overflow: auto;
      resize: vertical;
+ }
+ 
+ iframe {
+     padding-top: 5px;
+     margin: 5px:
  }
