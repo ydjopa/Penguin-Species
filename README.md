@@ -1,4 +1,4 @@
-######## Penguins Website #########
+# Penguins Website 
  
 Website: https://ydjopa.github.io/Penguin-Species/
 

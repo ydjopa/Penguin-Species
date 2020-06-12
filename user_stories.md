@@ -1,4 +1,4 @@
-######## User Stories ########
+# User Stories 
 
 - As a biology student she wants to browse information on penguins so that she can be more knowlegeable about them.
 
