@@ -426,6 +426,11 @@
      padding: 20px 30px;
  }
  
+ form {
+     background: linear-gradient(rgb(216, 119, 66), rgb(0, 0, 0, 0.5));
+     padding: 15px;
+ }
+ 
  input [type=name],
  select[type=email],
  textarea {
@@ -483,8 +488,6 @@
      line-height: inherit;
      border-color: #e67e22;
  }
- 
- element.style {}
  
  textarea {
      overflow: auto;
