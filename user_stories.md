@@ -15,5 +15,3 @@ This website was created using HTLM5, CSS, Bootstrap, and penguins images. Most 
 
 
 
-
-
